@@ -6,19 +6,30 @@ PageWhisper is an interactive AI-powered chatbot built with Streamlit, designed 
 **Technical Features**
 
 Supports PDF and Word (DOCX) file formats.
+
 Uses PyPDF2 and python-docx for document parsing.
+
 Splits text into manageable chunks using LangChain’s RecursiveCharacterTextSplitter to improve retrieval quality.
+
 Generates embeddings with OpenAIEmbeddings and stores them in a FAISS vector store for fast similarity searches.
+
 Answers user questions using OpenAI’s GPT-4o-mini through LangChain’s ChatOpenAI interface.
+
 
 **Libraries/Tools Used**
 
 streamlit – for web app interface
+
 PyPDF2 – to read PDF files
+
 python-docx – to read DOCX files
+
 langchain – for text splitting, embeddings, and LLM integration
+
 faiss-cpu – for efficient vector similarity search
+
 openai – for large language model (GPT) API
+
 
 **Features**
 
