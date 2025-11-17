@@ -18,7 +18,7 @@ Answers user questions using OpenAI’s GPT-4o-mini through LangChain’s ChatOp
 
 
 
-**Libraries/Tools Used**
+**Tech Stack**
 
 streamlit – for web app interface
 
