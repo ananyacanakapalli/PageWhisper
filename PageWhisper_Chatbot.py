@@ -45,18 +45,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
-## Sidebar
-# API Key
-OPENAI_API_KEY = st.sidebar.text_input("Enter your OpenAI API Key", type="password")
-
-if not OPENAI_API_KEY:
-    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-
-if not OPENAI_API_KEY:
-    st.error("Please provide your OpenAI API Key either in the sidebar or as an environment variable.")
-    st.stop()
-
 # Uploading File
 st.sidebar.subheader("Upload your document")
 file = st.sidebar.file_uploader("Choose a PDF or DOCX file", type=["pdf", "docx"])
