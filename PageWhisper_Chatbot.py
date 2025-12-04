@@ -49,6 +49,12 @@ st.markdown(
 st.sidebar.subheader("Upload your document")
 file = st.sidebar.file_uploader("Choose a PDF or DOCX file", type=["pdf", "docx"])
 
+# API Key
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+if not OPENAI_API_KEY:
+    st.error("API key missing! Please set it in the environment variables before running the app.")
+    st.stop()
 
 ## Main page
 # Title
